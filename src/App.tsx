@@ -1,9 +1,9 @@
 import './global.css'
 
+import { RouterProvider } from 'react-router-dom'
+
+import { routes } from './routes'
+
 export function App() {
-  return (
-    <div className="flex h-screen items-center justify-center">
-      Hello Vite + ShadcnUI
-    </div>
-  );
+  return <RouterProvider router={routes} />
 }
